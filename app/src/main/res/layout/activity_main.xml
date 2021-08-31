@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Numbers"
+            style="@style/CategoryStyle"
+            android:background="#FF8F00"
+            android:id="@+id/Numbers"
+            android:onClick="openNumbersList"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CategoryStyle"
+            android:text="Family members"
+            android:background="#388E3C"
+            android:id="@+id/FamilyMembers"
+            android:onClick="openFamilyList"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CategoryStyle"
+            android:text="colors"
+            android:background="#6A1B9A"
+            android:id="@+id/colors"
+            android:onClick="opencolorsList"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CategoryStyle"
+            android:text="phrases"
+            android:background="#00ACC1"
+            android:id="@+id/phrases"
+            android:onClick="openphrasesList"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
